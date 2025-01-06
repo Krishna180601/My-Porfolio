@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/7056bd42ec.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.net.min.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="logo" class="logo">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header_text">
+                <p>Hello, It's Me</p>
+                <h3>Leela Krishna Dampanaboina</h3>
+                <p class="role">And I'm a <span>Appian Developer</span></p>
+                <p class="quot">Creativity is the art of transforming ideas into experiences, where every detail is crafted<br>with purpose and every moment leaves an unforgettable impression.</p>
+            </div>
+            <button type="submit" class="btn1">Hire Me</button>
+        </div>
+    </div>
+    <!-----------------about------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Photo.jpg" alt="photo">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>As an Appian Developer with 1.2 years of experience, I believe my skills in designing, developing, and deploying solutions that streamline business processes and drive efficiency. I'm passionate about leveraging technology to empower organizations and ready learn new technologies.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experiance')">Experiance</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>BPM Tools</span><br>Appian (Appian Certified Associate Developer)</li>
+                            <li><span>Programming Languages</span><br>Java, JavaScript</li>
+                            <li><span>Database</span><br>SQL, MYSQL</li>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experiance">
+                        <ul>
+                            <li><span>Machint Solutions Pvt Ltd Company</span><br>Worked as a Associate Developer <br>From November 2022 to December 2023</li>
+                            <li><span>Karur Vysya Bank</span><br>Worked as a Business Development Executive <br>From June 2024 to November 2024</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.Tech (ECE)</span><br>Swarnandhra College of Engineering and Technology affiliated with Jawaharlal Nehru Technological 
+                                University, Kakinada, in 2022 with <b>7.43 CGPA</b>.</li>
+                            <li><span>Diploma (DECE)</span><br>Swarnandhra College of 
+                                Engineering and Technology, Narsapur in 2019 with <b>77.35%</b>.</li>
+                            <li><span>SSC</span><br>Padmalaya High School in 2016 with <b>8.7 CGPA</b>.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------services-------->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                <h2>Web Design</h2>
+                <p>Welcome to my portfolio! I'm a creative professional with a passion</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <h2>App Design</h2>
+                <p>Welcome to my portfolio! I'm a creative professional with a passion</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <h2>App Design</h2>
+                <p>Welcome to my portfolio! I'm a creative professional with a passion</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+<!-- -------Portfolio---------->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="subtitle">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/Photo.jpg" alt="phot">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connect you to the talented people around the world. Download it from playstore.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Photo.jpg" alt="phot">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>The app connect you to the talented people around the world. Download it from playstore.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Photo.jpg" alt="phot">
+                <div class="layer">
+                    <h3>Shoping App</h3>
+                    <p>The app connect you to the talented people around the world. Download it from playstore.</p>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+ </div>
+ <!----------Contact----------->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>leelakrishnadampanaboina@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9866565942</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <a href="images/LeelaKrishnaResume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Yor Name" required>
+                    <input type="email" name="Email" placeholder="Yor Email" required>
+                    <textarea name="Message" rows="6" placeholder="Write yor message here"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2024 Made by Dampanaboina Leela Krishna <i class="fa-solid fa-heart"></i>.</p>
+    </div>
+ </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents")
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        VANTA.NET({
+          el: "#header",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.00,
+          minWidth: 200.00,
+          scale: 1.00,
+          scaleMobile: 1.00
+        })
+        </script>
+</body>
+</html>
