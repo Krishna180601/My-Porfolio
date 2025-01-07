@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/7056bd42ec.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.net.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.dots.min.js"></script>
 </head>
 <body>
     <div id="header">
@@ -171,7 +171,7 @@
         }
     </script>
     <script>
-        VANTA.NET({
+        VANTA.DOTS({
           el: "#header",
           mouseControls: true,
           touchControls: true,
@@ -179,7 +179,11 @@
           minHeight: 200.00,
           minWidth: 200.00,
           scale: 1.00,
-          scaleMobile: 1.00
+          scaleMobile: 1.00,
+          color: 0xff004f,
+          color2: 0xff004f,
+          backgroundColor: 0x080808,
+          showLines: false
         })
         </script>
 </body>
