@@ -88,9 +88,13 @@ nav ul li a:hover::after {
   color: #fff;
   text-decoration: none;
   transition: background 0.5s;
+  cursor: pointer;
 }
 .btn1:hover {
   background: #ff004f;
+}
+.btn1:active {
+  transform: scale(0.98);
 }
 /*---------About---------*/
 
@@ -252,6 +256,9 @@ nav ul li a:hover::after {
 .btn:hover {
   background: #ff004f;
 }
+.btn:active {
+  transform: scale(0.98);
+}
 /*-------Contact--------*/
 .contact-left {
   flex-basis: 35%;
@@ -307,6 +314,7 @@ form .btn2 {
   margin-top: 20px;
   cursor: pointer;
 }
+/*---------Footer--------*/
 .copyright {
   width: 100%;
   padding: 25px 0;

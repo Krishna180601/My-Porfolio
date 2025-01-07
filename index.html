@@ -151,40 +151,12 @@
             </div>
         </div>
     </div>
+ </div>
+ <footer>
     <div class="copyright">
         <p>Copyright © 2024 Made by Dampanaboina Leela Krishna <i class="fa-solid fa-heart"></i>.</p>
     </div>
- </div>
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents")
-
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link");
-            }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab")
-        }
-    </script>
-    <script>
-        VANTA.DOTS({
-          el: "#header",
-          mouseControls: true,
-          touchControls: true,
-          gyroControls: false,
-          minHeight: 200.00,
-          minWidth: 200.00,
-          scale: 1.00,
-          scaleMobile: 1.00,
-          color: 0xff004f,
-          color2: 0xff004f,
-          backgroundColor: 0x080808,
-          showLines: false
-        })
-        </script>
+ </footer>
+    <script src="script.js"></script>
 </body>
 </html>
