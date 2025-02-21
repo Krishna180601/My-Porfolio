@@ -8,27 +8,38 @@
     <script src="https://kit.fontawesome.com/7056bd42ec.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.dots.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
     <div id="header">
-        <div class="container">
+        <div class="container" id="home">
             <nav>
                 <img src="images/logo.png" alt="logo" class="logo">
                 <ul>
-                    <li><a href="#home">Home</a></li>
+                    <li><a href="#home" class="active-link">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <div class="header_text">
-                <p>Hello, It's Me</p>
-                <h3>Leela Krishna Dampanaboina</h3>
-                <p class="role">And I'm a <span>Appian Developer</span></p>
-                <p class="quot">Creativity is the art of transforming ideas into experiences, where every detail is crafted<br>with purpose and every moment leaves an unforgettable impression.</p>
+            <div class="row">
+                <div class="col-1">
+                    <div class="header_text">
+                        <p>Hello, It's Me</p>
+                        <h3>Leela Krishna Dampanaboina</h3>
+                        <p class="role">And I'm a <span class="auto-type"></span></p>
+                        <p class="quot">Creativity is the art of transforming ideas into reality,<br>
+                             Coding is the art of turning logic into innovation, Bugs are challenges, <br> not obstacles, guiding growth. Developers build the future.</p>
+                    </div>
+                    <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#drafts?compose=CllgCJTHVQjGxsmWGcbrXHmJfGnBJQSxXmNbjgrXwgmXKjTmHvNVkHdRHxdRrCMLrlKhDCKTkkL" class="btn btn2">Hire Me</a>
+                </div>
+                <div class="col-2">
+                    <img src="images/gif.gif" alt="photo" class="gif">
+                </div>
             </div>
-            <button type="submit" class="btn1">Hire Me</button>
+            <a href="#home" class="gotopbtn" title="Go to top"><i class="fa-solid fa-up-long"></i></a>
         </div>
     </div>
     <!-----------------about------------>
@@ -36,27 +47,29 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/Photo.jpg" alt="photo">
+                    <img src="images/About Image.jpg" alt="photo">
                 </div>
                 <div class="about-col-2">
-                    <h1 class="subtitle">About Me</h1>
-                    <p>As an Appian Developer with 1.2 years of experience, I believe my skills in designing, developing, and deploying solutions that streamline business processes and drive efficiency. I'm passionate about leveraging technology to empower organizations and ready learn new technologies.</p>
+                    <h1 class="subtitle">About <Span>Me</Span></h1>
+                    <p class="bio">Having around 2 years of overall experience in the IT industry, which includes professional experience as a skilled Appian developer with hands-on experience in application design and development using Appian BPM tool. Achievements include Appian Certified Associate Developer certification and Web Development Basics Certificate. Proficient in BPM tools, programming languages such as Java, HTML, CSS, and JavaScript, and databases like MySQL and MariaDB. Demonstrated ability to analyze design documents, develop code, and enhance processes, contributing to a remarkable digital banking experience.</p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('experiance')">Experiance</p>
                         <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('achievements')">Achievements</p>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
                             <li><span>BPM Tools</span><br>Appian (Appian Certified Associate Developer)</li>
-                            <li><span>Programming Languages</span><br>Java, JavaScript</li>
+                            <li><span>Programming Languages</span><br>Java, JavaScript and HTML/CSS</li>
                             <li><span>Database</span><br>SQL, MYSQL</li>
                             <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="experiance">
                         <ul>
-                            <li><span>Machint Solutions Pvt Ltd Company</span><br>Worked as a Associate Developer <br>From November 2022 to December 2023</li>
+                            <li><span>Machint Solutions Pvt Ltd Company</span><br>Worked as a Associate Developer <br>January 2023 to December 2023</li>
+                            <li><span>Machint Solutions Pvt Ltd Company</span><br>Worked as a Appian Intern <br>From October 2021 to December 2022</li>
                             <li><span>Karur Vysya Bank</span><br>Worked as a Business Development Executive <br>From June 2024 to November 2024</li>
                         </ul>
                     </div>
@@ -69,6 +82,13 @@
                             <li><span>SSC</span><br>Padmalaya High School in 2016 with <b>8.7 CGPA</b>.</li>
                         </ul>
                     </div>
+                    <div class="tab-contents" id="achievements">
+                        <ul>
+                            <li>Got Appian Certified Associate Developer certificate</li>
+                            <li>Got Web Development Basics Certificate</li>
+                            <li>Got AWS Academy Cloud Foundation Certificate</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -76,49 +96,56 @@
     <!--------services-------->
     <div id="services">
         <div class="container">
-            <h1 class="subtitle">My Services</h1>
+            <h1 class="subtitle">My <span>Services</span></h1>
             <div class="services-list">
                 <div>
-                <h2>Web Design</h2>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
                 <p>Welcome to my portfolio! I'm a creative professional with a passion</p>
                 <a href="#">Learn more</a>
             </div>
             <div>
-                <h2>App Design</h2>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX Design</h2>
                 <p>Welcome to my portfolio! I'm a creative professional with a passion</p>
                 <a href="#">Learn more</a>
             </div>
             <div>
+                <i class="fa-brands fa-app-store"></i>
                 <h2>App Design</h2>
                 <p>Welcome to my portfolio! I'm a creative professional with a passion</p>
                 <a href="#">Learn more</a>
             </div>
         </div>
+        <a href="#" class="btn">See More</a>
     </div>
 <!-- -------Portfolio---------->
  <div id="portfolio">
     <div class="container">
-        <h1 class="subtitle">My Work</h1>
+        <h1 class="subtitle">My <span>Works</span></h1>
         <div class="work-list">
             <div class="work">
-                <img src="images/Photo.jpg" alt="phot">
+                <img src="images/Bank img.jpg" alt="image">
                 <div class="layer">
-                    <h3>Social Media App</h3>
-                    <p>The app connect you to the talented people around the world. Download it from playstore.</p>
+                    <h3>Banking App</h3>
+                    <p>Banqify is a new-age banking solution aimed at helping different sectors of financial institutions to offer impressive digital experience to their customers with market-ready products.</p>
+                    <a href="https://youtu.be/1INiuvBsL7Q?si=B5wZcPqsgiD79WeP" title="Explore"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work">
-                <img src="images/Photo.jpg" alt="phot">
+                <img src="images/Krishi img.jpg" alt="image">
+                <div class="layer">
+                    <h3>Krishi App</h3>
+                    <p>Krishi application having all types of services related to Farmers which includes Live weather, Loans, Cold Storage Bookings, Govt Schemes etc.</p>
+                    <a href="https://youtu.be/IAOhbZ2jgn8?si=l3_y4tFumG9nw81f" title="Explore"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Music img.webp" alt="image">
                 <div class="layer">
                     <h3>Music App</h3>
-                    <p>The app connect you to the talented people around the world. Download it from playstore.</p>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/Photo.jpg" alt="phot">
-                <div class="layer">
-                    <h3>Shoping App</h3>
-                    <p>The app connect you to the talented people around the world. Download it from playstore.</p>
+                    <p> Create custom playlists, explore trending tracks, and enjoy high-quality audio anytime, anywhere. Experience seamless music enjoyment with an intuitive interface.</p>
+                    <a href="#" title="Explore"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
         </div>
@@ -131,15 +158,15 @@
         <div class="row">
             <div class="contact-left">
                 <h1 class="subtitle">Contact Me</h1>
-                <p><i class="fa-solid fa-paper-plane"></i>leelakrishnadampanaboina@gmail.com</p>
+                <p><i class="fa-solid fa-paper-plane"></i>leela.ece.017@gmail.com</p>
                 <p><i class="fa-solid fa-phone"></i>9866565942</p>
                 <div class="social-icons">
-                    <a href=""><i class="fa-brands fa-facebook"></i></a>
-                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
-                    <a href=""><i class="fa-brands fa-linkedin"></i></i></a>
-                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.facebook.com/" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/" title="Instagram"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/dampanaboina-leela-krishna" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.youtube.com/@lkeditzs" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
                 </div>
-                <a href="images/LeelaKrishnaResume.pdf" download class="btn btn2">Download CV</a>
+                <a href="images/LeelaKrishnaRes.pdf" download class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
                 <form>
@@ -154,7 +181,7 @@
  </div>
  <footer>
     <div class="copyright">
-        <p>Copyright © 2024 Made by Dampanaboina Leela Krishna <i class="fa-solid fa-heart"></i>.</p>
+        <p>Copyright © 2025 Made by Dampanaboina Leela Krishna <i class="fa-solid fa-heart"></i>.</p>
     </div>
  </footer>
     <script src="script.js"></script>
