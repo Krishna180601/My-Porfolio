@@ -59,3 +59,12 @@ ScrollReveal().reveal(".contact-left,.about-col-1, nav img, .header_text h3", {
   origin: "left",
 });
 ScrollReveal().reveal(".bio, nav ul, .quot, .gif", { origin: "right" });
+
+// Side Navigation
+var sideMenu = document.getElementById("sideMenu");
+function openMenu() {
+  sideMenu.style.right = "0";
+}
+function closeMenu() {
+  sideMenu.style.right = "-200px";
+}

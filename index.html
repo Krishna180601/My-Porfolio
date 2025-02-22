@@ -16,13 +16,15 @@
         <div class="container" id="home">
             <nav>
                 <img src="images/logo.png" alt="logo" class="logo">
-                <ul>
+                <ul id="sideMenu">
                     <li><a href="#home" class="active-link">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about" onclick="closeMenu()">About</a></li>
+                    <li><a href="#services" onclick="closeMenu()">Services</a></li>
+                    <li><a href="#portfolio" onclick="closeMenu()">Portfolio</a></li>
+                    <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
             </nav>
             <div class="row">
                 <div class="col-1">
@@ -101,19 +103,19 @@
                 <div>
                     <i class="fa-solid fa-code"></i>
                     <h2>Web Design</h2>
-                <p>Welcome to my portfolio! I'm a creative professional with a passion</p>
+                <p>As a developer, web design is about structuring and styling websites to ensure seamless functionality, responsive layouts, and an intuitive user experience.</p>
                 <a href="#">Learn more</a>
             </div>
             <div>
                 <i class="fa-solid fa-crop-simple"></i>
                 <h2>UI/UX Design</h2>
-                <p>Welcome to my portfolio! I'm a creative professional with a passion</p>
+                <p>UI/UX design focuses on creating intuitive, visually appealing interfaces and seamless user experiences by balancing aesthetics, functionality, and user needs.</p>
                 <a href="#">Learn more</a>
             </div>
             <div>
                 <i class="fa-brands fa-app-store"></i>
                 <h2>App Design</h2>
-                <p>Welcome to my portfolio! I'm a creative professional with a passion</p>
+                <p>App design involves crafting intuitive interfaces and seamless user experiences by combining functionality, aesthetics, and usability to enhance user engagement.</p>
                 <a href="#">Learn more</a>
             </div>
         </div>
